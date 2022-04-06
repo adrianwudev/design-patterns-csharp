@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FactoryMethod", "FactoryMet
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AsynchronousFactoryMethod", "AsynchronousFactoryMethod\AsynchronousFactoryMethod.csproj", "{C5C5515E-8F6A-4A32-B7B9-2120258D627F}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ObjectTrackingAndBulkReplacement", "ObjectTrackingAndBulkReplacement\ObjectTrackingAndBulkReplacement.csproj", "{8E2BD7B6-6D2B-4D37-808F-DEC8536DC76F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{C5C5515E-8F6A-4A32-B7B9-2120258D627F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C5C5515E-8F6A-4A32-B7B9-2120258D627F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C5C5515E-8F6A-4A32-B7B9-2120258D627F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E2BD7B6-6D2B-4D37-808F-DEC8536DC76F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E2BD7B6-6D2B-4D37-808F-DEC8536DC76F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E2BD7B6-6D2B-4D37-808F-DEC8536DC76F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E2BD7B6-6D2B-4D37-808F-DEC8536DC76F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
