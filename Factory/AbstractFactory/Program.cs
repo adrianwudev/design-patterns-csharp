@@ -50,36 +50,83 @@ namespace AbstractFactory
 
     public class HotDrinkMachine
     {
-        public enum AvailableDrink
-        {
-            Coffee, Tea
-        }
+        //public enum AvailableDrink
+        //{
+        //    Coffee, Tea
+        //}
 
-        private Dictionary<AvailableDrink, IHotDrinkFactory> factories =
-            new Dictionary<AvailableDrink, IHotDrinkFactory>();
+        //private Dictionary<AvailableDrink, IHotDrinkFactory> factories =
+        //    new Dictionary<AvailableDrink, IHotDrinkFactory>();
 
+        //public HotDrinkMachine()
+        //{
+        //    try
+        //    {
+        //        foreach (AvailableDrink drink in Enum.GetValues(typeof(AvailableDrink)))
+        //        {
+        //            var factory = (IHotDrinkFactory)Activator.CreateInstance(
+        //                Type.GetType("AbstractFactory." + Enum.GetName(typeof(AvailableDrink), drink) + "Factory")
+        //                );
+        //            factories.Add(drink, factory);
+        //        }
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        Console.WriteLine(ex.ToString());
+        //        throw;
+        //    }
+        //}
+
+        //public IHotDrink MakeDrink(AvailableDrink drink, int amount)
+        //{
+        //    return factories[drink].Prepare(amount);
+        //}
+        private List<Tuple<string, IHotDrinkFactory>> factories =
+            new List<Tuple<string, IHotDrinkFactory>>();
         public HotDrinkMachine()
         {
-            try
+            foreach (var t in typeof(HotDrinkMachine).Assembly.GetTypes())
             {
-                foreach (AvailableDrink drink in Enum.GetValues(typeof(AvailableDrink)))
+                if (typeof(IHotDrinkFactory).IsAssignableFrom(t)
+                    && !t.IsInterface)
                 {
-                    var factory = (IHotDrinkFactory)Activator.CreateInstance(
-                        Type.GetType("AbstractFactory." + Enum.GetName(typeof(AvailableDrink), drink) + "Factory")
-                        );
-                    factories.Add(drink, factory);
+                    factories.Add(Tuple.Create(
+                        t.Name.Replace("Factory", string.Empty),
+                        (IHotDrinkFactory)Activator.CreateInstance(t)
+                        ));
                 }
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine(ex.ToString());
-                throw;
             }
         }
 
-        public IHotDrink MakeDrink(AvailableDrink drink, int amount)
+        public IHotDrink MakeDrink()
         {
-            return factories[drink].Prepare(amount);
+            WriteLine("Available drinks:");
+            for (int index = 0; index < factories.Count; index++)
+            {
+                Tuple<string, IHotDrinkFactory> tuple = factories[index];
+                WriteLine($"{index}: {tuple.Item1}");
+            }
+
+            while (true)
+            {
+                string s;
+                if ((s = Console.ReadLine()) != null
+                    && int.TryParse(s, out int i)
+                    && i >= 0
+                    && i < factories.Count)
+                {
+                    Write("Specify amount: ");
+                    s = ReadLine();
+                    if (s != null
+                        && int.TryParse(s, out int amount)
+                        && amount > 0)
+                    {
+                        return factories[i].Item2.Prepare(amount);
+                    }
+                }
+
+                WriteLine("Incorrect input, try again!");
+            }
         }
     }
 
@@ -88,8 +135,9 @@ namespace AbstractFactory
         static void Main(string[] args)
         {
             var machine = new HotDrinkMachine();
-            var drink = machine.MakeDrink(HotDrinkMachine.AvailableDrink.Tea, 100);
+            IHotDrink drink = machine.MakeDrink();
             drink.Consume();
+
         }
     }
 }
