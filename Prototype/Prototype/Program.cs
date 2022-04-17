@@ -2,7 +2,11 @@
 
 namespace CopyConstructor
 {
-    public class Person
+    public interface IPrototype<T>
+    {
+        T DeepCopy();
+    }
+    public class Person : IPrototype<Person>
     {
         public string[] Names;
         public Address Address;
@@ -23,9 +27,14 @@ namespace CopyConstructor
         {
             return $"{nameof(Names)}: {string.Join(" ", Names)}, {nameof(Address)}: {Address}";
         }
+
+        public Person DeepCopy()
+        {
+            return new Person(Names, Address.DeepCopy());
+        }
     }
 
-    public class Address
+    public class Address : IPrototype<Address>
     {
         public string StreetName;
         public int HouseNumber;
@@ -46,6 +55,11 @@ namespace CopyConstructor
         {
             return $"{nameof(StreetName)}: {StreetName}, {nameof(HouseNumber)}: {HouseNumber}";
         }
+
+        public Address DeepCopy()
+        {
+            return new Address(StreetName, HouseNumber);
+        }
     }
 
     internal class Program
@@ -55,9 +69,9 @@ namespace CopyConstructor
             var john = new Person(new[] { "John", "Smith" },
                 new Address("London Road", 456));
 
-            var jane = new Person(john);
+            var jane = john.DeepCopy();
             jane.Address.HouseNumber = 123;
-            jane.Names = new[] { "Jane", "Smith" };
+            jane.Names = new[] { "Jane", "Rodriguez" };
 
             Console.WriteLine(john);
             Console.WriteLine(jane);
