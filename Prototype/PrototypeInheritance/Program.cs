@@ -1,19 +1,37 @@
 ﻿using System;
+using System.IO;
+using System.Runtime.Serialization.Formatters.Binary;
+using System.Xml.Serialization;
 
 namespace PrototypeInheritance
 {
-    public interface IDeepCopyable<T>
-        where T : new()
+    public static class ExtensionMethods
     {
-        void CopyTo(T target);
-        public T DeepCopy()
+        public static T DeepCopy<T>(this T self)
         {
-            T t = new T();
-            CopyTo(t);
-            return t;
+            var stream = new MemoryStream();
+            var formatter = new BinaryFormatter();
+            formatter.Serialize(stream, self);
+            stream.Seek(0, SeekOrigin.Begin);
+            object copy = formatter.Deserialize(stream);
+            stream.Close();
+            return (T) copy;
+        }
+
+        public static T DeepCopyXml<T>(this T self)
+        {
+            using (var ms = new MemoryStream())
+            {
+                var s = new XmlSerializer(typeof(T));
+                s.Serialize(ms, self);
+                ms.Position = 0;
+                return (T) s.Deserialize(ms);
+            }
         }
     }
-    public class Address : IDeepCopyable<Address>
+
+    [Serializable]
+    public class Address
     {
         public string StreetName;
         public int HouseNumber;
@@ -42,7 +60,8 @@ namespace PrototypeInheritance
         }
     }
 
-    public class Person : IDeepCopyable<Person>
+    [Serializable]
+    public class Person
     {
         public string[] Names;
         public Address Address;
@@ -71,7 +90,8 @@ namespace PrototypeInheritance
         }
     }
 
-    public class Employee : Person, IDeepCopyable<Employee>
+    [Serializable]
+    public class Employee : Person
     {
         public int Salary;
         public Employee()
@@ -96,21 +116,6 @@ namespace PrototypeInheritance
             target.Salary = Salary;
         }
     }
-
-    public static class ExtensionMethods
-    {
-        public static T DeepCopy<T>(this IDeepCopyable<T> item)
-            where T : new()
-        {
-            return item.DeepCopy();
-        }
-
-        public static T DeepCopy<T>(this T person)
-            where T : Person, new()
-        {
-            return ((IDeepCopyable<T>) person).DeepCopy();
-        }
-    }
     internal class Program
     {
         static void Main(string[] args)
@@ -124,8 +129,10 @@ namespace PrototypeInheritance
             };
             john.Salary = 32100;
 
-            var copy = john.DeepCopy();
+            var copy = john.DeepCopyXml();
+            copy.Names[0] = "Celeste";
             copy.Names[1] = "Smith";
+            copy.Address.StreetName = "Citizen Road";
             copy.Address.HouseNumber++;
             copy.Salary = 12300;
 
