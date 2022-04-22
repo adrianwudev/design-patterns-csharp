@@ -8,3 +8,4 @@
 ## Design Patterns
 #### Builder
 #### Factory
+#### Singleton
