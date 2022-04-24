@@ -5,10 +5,12 @@ VisualStudioVersion = 17.1.32328.378
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Singleton", "Singleton\Singleton.csproj", "{E2B8ED04-2195-42D3-B6D6-37E4B8B07F0C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Singleton.NUnitTests", "Singleton.NUnitTests\Singleton.NUnitTests.csproj", "{5F71DFA7-1BC0-4662-8AC4-176F023DFAA2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Singleton.NUnitTests", "Singleton.NUnitTests\Singleton.NUnitTests.csproj", "{5F71DFA7-1BC0-4662-8AC4-176F023DFAA2}"
 	ProjectSection(ProjectDependencies) = postProject
 		{E2B8ED04-2195-42D3-B6D6-37E4B8B07F0C} = {E2B8ED04-2195-42D3-B6D6-37E4B8B07F0C}
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SingletonMonostate", "SingletonMonostate\SingletonMonostate.csproj", "{32E9C755-FF32-4118-B672-936E6893680A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -24,6 +26,10 @@ Global
 		{5F71DFA7-1BC0-4662-8AC4-176F023DFAA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5F71DFA7-1BC0-4662-8AC4-176F023DFAA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5F71DFA7-1BC0-4662-8AC4-176F023DFAA2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32E9C755-FF32-4118-B672-936E6893680A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32E9C755-FF32-4118-B672-936E6893680A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32E9C755-FF32-4118-B672-936E6893680A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32E9C755-FF32-4118-B672-936E6893680A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
