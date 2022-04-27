@@ -9,3 +9,4 @@
 #### Builder
 #### Factory
 #### Singleton
+#### Adapter
