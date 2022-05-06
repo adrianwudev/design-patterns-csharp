@@ -10,3 +10,5 @@
 #### Factory
 #### Singleton
 #### Adapter
+#### Bridge
+#### Composite
