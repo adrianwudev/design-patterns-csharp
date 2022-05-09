@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32328.378
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompositeNeuralNetworks", "CompositeNeuralNetworks\CompositeNeuralNetworks.csproj", "{2E529D04-8CD5-4FBB-A65E-237EBD2D07E2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2E529D04-8CD5-4FBB-A65E-237EBD2D07E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E529D04-8CD5-4FBB-A65E-237EBD2D07E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E529D04-8CD5-4FBB-A65E-237EBD2D07E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E529D04-8CD5-4FBB-A65E-237EBD2D07E2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5924EBA0-506E-4AF3-AFFE-C028E0B6B179}
+	EndGlobalSection
+EndGlobal
