@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32328.378
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Composite", "Composite\Composite.csproj", "{82032B0A-E2F6-4E0E-B8E4-00C581D78674}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Composite", "Composite\Composite.csproj", "{82032B0A-E2F6-4E0E-B8E4-00C581D78674}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CompositeNeuralNetworks", "CompositeNeuralNetworks\CompositeNeuralNetworks.csproj", "{F54865BD-59E2-4C29-AC0B-F188A98DD6EF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompositeSpecification", "CompositeSpecification\CompositeSpecification.csproj", "{412B3CAD-7C44-4559-9858-98BEB32C8030}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{82032B0A-E2F6-4E0E-B8E4-00C581D78674}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{82032B0A-E2F6-4E0E-B8E4-00C581D78674}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{82032B0A-E2F6-4E0E-B8E4-00C581D78674}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F54865BD-59E2-4C29-AC0B-F188A98DD6EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F54865BD-59E2-4C29-AC0B-F188A98DD6EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F54865BD-59E2-4C29-AC0B-F188A98DD6EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F54865BD-59E2-4C29-AC0B-F188A98DD6EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{412B3CAD-7C44-4559-9858-98BEB32C8030}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{412B3CAD-7C44-4559-9858-98BEB32C8030}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{412B3CAD-7C44-4559-9858-98BEB32C8030}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{412B3CAD-7C44-4559-9858-98BEB32C8030}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
