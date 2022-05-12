@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32328.378
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Decorator", "Decorator\Decorator.csproj", "{8659FC93-153B-4175-A2F6-E5EA43E247AD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Decorator", "Decorator\Decorator.csproj", "{8659FC93-153B-4175-A2F6-E5EA43E247AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DecoratorAdaptorDecorator", "DecoratorAdaptorDecorator\DecoratorAdaptorDecorator.csproj", "{5EFB296C-E09C-49C4-B59F-B0CB34C8F372}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{8659FC93-153B-4175-A2F6-E5EA43E247AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8659FC93-153B-4175-A2F6-E5EA43E247AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8659FC93-153B-4175-A2F6-E5EA43E247AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5EFB296C-E09C-49C4-B59F-B0CB34C8F372}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5EFB296C-E09C-49C4-B59F-B0CB34C8F372}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5EFB296C-E09C-49C4-B59F-B0CB34C8F372}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5EFB296C-E09C-49C4-B59F-B0CB34C8F372}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
