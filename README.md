@@ -12,3 +12,4 @@
 #### Adapter
 #### Bridge
 #### Composite
+#### Decorator
