@@ -5,7 +5,9 @@ VisualStudioVersion = 17.1.32328.378
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Decorator", "Decorator\Decorator.csproj", "{8659FC93-153B-4175-A2F6-E5EA43E247AD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DecoratorAdaptorDecorator", "DecoratorAdaptorDecorator\DecoratorAdaptorDecorator.csproj", "{5EFB296C-E09C-49C4-B59F-B0CB34C8F372}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DecoratorAdaptorDecorator", "DecoratorAdaptorDecorator\DecoratorAdaptorDecorator.csproj", "{5EFB296C-E09C-49C4-B59F-B0CB34C8F372}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DecoratorMultipleInheritanceWithInterfaces", "DecoratorMultipleInheritanceWithInterfaces\DecoratorMultipleInheritanceWithInterfaces.csproj", "{F26ADC51-D16C-4552-B9BD-C4C64FE5BDC7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{5EFB296C-E09C-49C4-B59F-B0CB34C8F372}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5EFB296C-E09C-49C4-B59F-B0CB34C8F372}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5EFB296C-E09C-49C4-B59F-B0CB34C8F372}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F26ADC51-D16C-4552-B9BD-C4C64FE5BDC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F26ADC51-D16C-4552-B9BD-C4C64FE5BDC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F26ADC51-D16C-4552-B9BD-C4C64FE5BDC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F26ADC51-D16C-4552-B9BD-C4C64FE5BDC7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
