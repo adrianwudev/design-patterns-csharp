@@ -9,9 +9,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DecoratorAdaptorDecorator",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DecoratorMultipleInheritanceWithInterfaces", "DecoratorMultipleInheritanceWithInterfaces\DecoratorMultipleInheritanceWithInterfaces.csproj", "{F26ADC51-D16C-4552-B9BD-C4C64FE5BDC7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DecoratorMultipleInheritanceWithDefaultInterfaceMembers", "DecoratorMultipleInheritanceWithDefaultInterfaceMembers\DecoratorMultipleInheritanceWithDefaultInterfaceMembers.csproj", "{8E99F178-184A-4DC3-A348-F85BF33E70B4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DecoratorMultipleInheritanceWithDefaultInterfaceMembers", "DecoratorMultipleInheritanceWithDefaultInterfaceMembers\DecoratorMultipleInheritanceWithDefaultInterfaceMembers.csproj", "{8E99F178-184A-4DC3-A348-F85BF33E70B4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DecoratorDynamicDecoratorComposition", "DecoratorDynamicDecoratorComposition\DecoratorDynamicDecoratorComposition.csproj", "{AA3EF640-402A-49D7-AB89-0572042093D2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DecoratorDynamicDecoratorComposition", "DecoratorDynamicDecoratorComposition\DecoratorDynamicDecoratorComposition.csproj", "{AA3EF640-402A-49D7-AB89-0572042093D2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DecoratorDetectingDecoratorCycles", "DecoratorDetectingDecoratorCycles\DecoratorDetectingDecoratorCycles.csproj", "{EB2FEFC8-7F55-4423-8E1C-5824534A90F2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{AA3EF640-402A-49D7-AB89-0572042093D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AA3EF640-402A-49D7-AB89-0572042093D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AA3EF640-402A-49D7-AB89-0572042093D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB2FEFC8-7F55-4423-8E1C-5824534A90F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB2FEFC8-7F55-4423-8E1C-5824534A90F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB2FEFC8-7F55-4423-8E1C-5824534A90F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB2FEFC8-7F55-4423-8E1C-5824534A90F2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
