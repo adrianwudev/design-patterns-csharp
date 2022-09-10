@@ -13,3 +13,4 @@
 #### Bridge
 #### Composite
 #### Decorator
+#### FlyWeight
