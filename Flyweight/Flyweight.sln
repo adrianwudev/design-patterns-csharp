@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Flyweight_RepeatingUserName
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FlyweightTextFormatting", "FlyweightTextFormatting\FlyweightTextFormatting.csproj", "{FACB528A-110E-43BE-8342-0E8DDE36ADF4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlyweightExercise", "FlyweightExercise\FlyweightExercise.csproj", "{52F4432A-5AC5-4D50-80A3-30059CCC3CA6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{FACB528A-110E-43BE-8342-0E8DDE36ADF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FACB528A-110E-43BE-8342-0E8DDE36ADF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FACB528A-110E-43BE-8342-0E8DDE36ADF4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52F4432A-5AC5-4D50-80A3-30059CCC3CA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52F4432A-5AC5-4D50-80A3-30059CCC3CA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52F4432A-5AC5-4D50-80A3-30059CCC3CA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52F4432A-5AC5-4D50-80A3-30059CCC3CA6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
