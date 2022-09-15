@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PropertyProxy", "PropertyPr
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ValueProxy", "ValueProxy\ValueProxy.csproj", "{FF35CDEA-DA50-4D0F-AAD6-39FE7CDEBE87}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompositeProxySoA_AoS", "CompositeProxySoA_AoS\CompositeProxySoA_AoS.csproj", "{6D4EE675-660A-4E09-A901-DF0C545EC894}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CompositeProxySoA_AoS", "CompositeProxySoA_AoS\CompositeProxySoA_AoS.csproj", "{6D4EE675-660A-4E09-A901-DF0C545EC894}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompositeProxyArrayBackendProperties", "CompositeProxyArrayBackendProperties\CompositeProxyArrayBackendProperties.csproj", "{46333DB9-016B-461D-8CE8-9D3BE73FF389}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{6D4EE675-660A-4E09-A901-DF0C545EC894}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6D4EE675-660A-4E09-A901-DF0C545EC894}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6D4EE675-660A-4E09-A901-DF0C545EC894}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46333DB9-016B-461D-8CE8-9D3BE73FF389}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46333DB9-016B-461D-8CE8-9D3BE73FF389}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46333DB9-016B-461D-8CE8-9D3BE73FF389}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46333DB9-016B-461D-8CE8-9D3BE73FF389}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
