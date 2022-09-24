@@ -15,7 +15,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CompositeProxyArrayBackendP
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DynamicProxyForLogging", "DynamicProxyForLogging\DynamicProxyForLogging.csproj", "{C0BB0840-0806-4CE8-B9E5-803BA4889174}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViewModel", "ViewModel\ViewModel.csproj", "{3E99B097-DEB1-48E7-9D3D-0A197AF2DC18}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ViewModel", "ViewModel\ViewModel.csproj", "{3E99B097-DEB1-48E7-9D3D-0A197AF2DC18}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise", "Exercise\Exercise.csproj", "{C2894DC5-2DDC-468D-B431-585ADB0BE571}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{3E99B097-DEB1-48E7-9D3D-0A197AF2DC18}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3E99B097-DEB1-48E7-9D3D-0A197AF2DC18}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3E99B097-DEB1-48E7-9D3D-0A197AF2DC18}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2894DC5-2DDC-468D-B431-585ADB0BE571}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2894DC5-2DDC-468D-B431-585ADB0BE571}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2894DC5-2DDC-468D-B431-585ADB0BE571}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2894DC5-2DDC-468D-B431-585ADB0BE571}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
