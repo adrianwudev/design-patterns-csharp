@@ -5,7 +5,9 @@ VisualStudioVersion = 17.1.32328.378
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChainOfResponsibility", "ChainOfResponsibility\ChainOfResponsibility.csproj", "{A687A084-B22C-420F-AD24-8B0A7BD15211}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModifierChain.BrokerChain", "ModifierChain.BrokerChain\ModifierChain.BrokerChain.csproj", "{D2E5EE36-A338-48F6-8DB0-70ECC85FBE43}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ModifierChain.BrokerChain", "ModifierChain.BrokerChain\ModifierChain.BrokerChain.csproj", "{D2E5EE36-A338-48F6-8DB0-70ECC85FBE43}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exercise", "Exercise\Exercise.csproj", "{0A3030BE-CAF9-4243-9084-9B2638A50F95}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{D2E5EE36-A338-48F6-8DB0-70ECC85FBE43}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D2E5EE36-A338-48F6-8DB0-70ECC85FBE43}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D2E5EE36-A338-48F6-8DB0-70ECC85FBE43}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A3030BE-CAF9-4243-9084-9B2638A50F95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A3030BE-CAF9-4243-9084-9B2638A50F95}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A3030BE-CAF9-4243-9084-9B2638A50F95}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A3030BE-CAF9-4243-9084-9B2638A50F95}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
