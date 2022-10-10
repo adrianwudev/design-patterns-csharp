@@ -12,13 +12,15 @@ namespace DesignPatterns.Command
             Console.WriteLine($"Deposited {amount}, balance is now {balance}");
         }
 
-        public void Withdraw(int amount)
+        public bool Withdraw(int amount)
         {
             if (balance - amount >= overdraftLimit)
             {
                 balance -= amount;
                 Console.WriteLine($"Withdraw {amount}, balance is now {balance}");
+                return true;
             }
+            return false;
         }
 
         public override string ToString()
@@ -30,6 +32,7 @@ namespace DesignPatterns.Command
     public interface ICommand
     {
         void Call();
+        void Undo();
     }
 
     public class BankAccountCommand : ICommand
@@ -43,6 +46,7 @@ namespace DesignPatterns.Command
         
         private Action _action;
         private int _amount;
+        private bool _succeeded = false;
 
         public BankAccountCommand(BankAccount account, Action action, int amount)
         {
@@ -57,9 +61,26 @@ namespace DesignPatterns.Command
             {
                 case Action.Deposit:
                     _account.Deposit(_amount);
+                    _succeeded = true;
                     break;
                 case Action.Withdraw:
+                    _succeeded = _account.Withdraw(_amount);
+                    break;
+                default:
+                    throw new ArgumentOutOfRangeException();
+            }
+        }
+
+        public void Undo()
+        {
+            if (!_succeeded) return;
+            switch (_action)
+            {
+                case Action.Deposit:
                     _account.Withdraw(_amount);
+                    break;
+                case Action.Withdraw:
+                    _account.Deposit(_amount);
                     break;
                 default:
                     throw new ArgumentOutOfRangeException();
@@ -74,13 +95,18 @@ namespace DesignPatterns.Command
             var commands = new List<BankAccountCommand>
             {
                 new BankAccountCommand(ba, BankAccountCommand.Action.Deposit, 200),
-                new BankAccountCommand(ba, BankAccountCommand.Action.Withdraw, 100),
+                new BankAccountCommand(ba, BankAccountCommand.Action.Withdraw, 10000),
             };
 
             Console.WriteLine(ba);
 
             foreach(var c in commands)
                 c.Call();
+
+            Console.WriteLine(ba);
+
+            foreach (var c in Enumerable.Reverse(commands))
+                c.Undo();
 
             Console.WriteLine(ba);
         }
